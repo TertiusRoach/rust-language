@@ -2,7 +2,6 @@ node_modules
 fetchjson
 types
 misc
-bin
 
 *.txt
 *.lnk
@@ -10,9 +9,14 @@ package-lock.json
 package.json
 .git
 
-
 ~recycle
 .cache
 .vscode
 
 /target
+
+# Added by cargo
+#
+# already existing elements were commented out
+
+#/target
