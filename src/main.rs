@@ -1,12 +1,13 @@
+enum Direction {
+    Left,
+    Right,
+    Up,
+}
 fn main() {
-    println!("Hello, world!");
+    let go = Direction::Right;
+    match go {
+        Direction::Left => println!("Go left"),
+        Direction::Right => println!("Go right"),
+        Direction::Up => println!("Go up"),
+    }
 }
-
-fn add(a: i32, b: i32) -> i32 {
-    a + b
-}
-
-
-let x = add(1,1);
-let y = add(3,0);
-let z = add(x,1);
