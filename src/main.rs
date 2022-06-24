@@ -1,13 +1,16 @@
-enum Direction {
-    Left,
-    Right,
-    Up,
+enum Access {
+    Admin,
+    Manager,
+    User,
+    Guest,
 }
+
 fn main() {
-    let go = Direction::Right;
-    match go {
-        Direction::Left => println!("Go left"),
-        Direction::Right => println!("Go right"),
-        Direction::Up => println!("Go up"),
-    }
+    // Secret File: Admins Only
+    let access_level = Access::Guest;
+    let can_access_file = match access_level {
+        Access::Admin => true,
+        _ => false,
+    };
+    println!("Can Access: {:?}", can_access_file);
 }
