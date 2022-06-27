@@ -25,4 +25,6 @@ fn print_color(my_color: Color) {
 
 fn main() {
     print_color(Color::Blue);
+    print_color(Color::Yellow);
+    print_color(Color::Red);
 }
