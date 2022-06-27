@@ -17,7 +17,7 @@ fn display_quantity(item: &GroceryItem) {
 }
 // * Create a function to display the id number, with the struct as a parameter
 fn display_id(item: &GroceryItem) {
-    println!("id: {:?}", item.id);
+    println!("ID: {:?}", item.id);
 }
 
 fn main() {

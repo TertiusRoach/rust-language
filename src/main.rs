@@ -1,16 +1,20 @@
-enum Access {
-    Admin,
-    Manager,
-    User,
-    Guest,
+struct Temperature {
+    degrees_f: f64,
+}
+// impl Stands for Implementation
+impl Temperature {
+    fn freezing() -> Self {
+        Self { degrees_f: 32.0 }
+    }
+    fn show_temp(&self) {
+        println!("{:?} degrees F", self.degrees_f);
+    }
 }
 
 fn main() {
-    // Secret File: Admins Only
-    let access_level = Access::Guest;
-    let can_access_file = match access_level {
-        Access::Admin => true,
-        _ => false,
-    };
-    println!("Can Access: {:?}", can_access_file);
+    let hot = Temperature { degrees_f: 99.9 };
+    hot.show_temp();
+
+    let cold = Temperature::freezing();
+    cold.show_temp();
 }
