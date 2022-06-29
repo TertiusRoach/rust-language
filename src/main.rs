@@ -1,20 +1,31 @@
-struct Temperature {
-    degrees_f: f64,
+enum Discount {
+    Percent(i32),
+    Flat(i32),
 }
-// impl Stands for Implementation
-impl Temperature {
-    fn freezing() -> Self {
-        Self { degrees_f: 32.0 }
-    }
-    fn show_temp(&self) {
-        println!("{:?} degrees F", self.degrees_f);
-    }
+struct Ticket {
+    event: String,
+    price: i32,
 }
-
 fn main() {
-    let hot = Temperature { degrees_f: 99.9 };
-    hot.show_temp();
+    let n = 3;
+    match n {
+        3 => println!("Three"),
+        other => println!("Number: {:?}", other),
+    }
 
-    let cold = Temperature::freezing();
-    cold.show_temp();
+    let flat = Discount::Flat(2);
+    match flat {
+        Discount::Flat(2) => println!("Flat 2"),
+        Discount::Flat(amount) => println!("Flat discount of {:?}", amount),
+        _ => (),
+    }
+
+    let concert = Ticket {
+        event: "Concert".to_owned(),
+        price: 50,
+    };
+    match concert {
+        Ticket { price: 50, event } => println!("Event @ 50 = {:?}", event),
+        Ticket { price, .. } => println!("Price = {:?}", price),
+    }
 }
