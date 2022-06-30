@@ -21,8 +21,8 @@ fn main() {
         Ticket::Vip(30.0, "Amy".to_owned()),
     ];
 
-    for Ticket in tickets {
-        match Ticket {
+    for ticket in tickets {
+        match ticket {
             Ticket::Backstage(price, holder) => {
                 println!("Backstate ticket holder: {:?}, price: {:?}", holder, price);
             }
