@@ -1,14 +1,14 @@
 //--|▼| Tools (Import) |▼|--//
-import { DataCreate } from 'code/tools/DataCreate';
-import { DataErase } from 'code/tools/DataErase';
-import { DataRead } from 'code/tools/DataRead';
-import { DataUpdate } from 'code/tools/DataUpdate';
+import { DataCreate } from 'code/utilities/DataCreate';
+import { DataErase } from 'code/utilities/DataErase';
+import { DataRead } from 'code/utilities/DataRead';
+import { DataUpdate } from 'code/utilities/DataUpdate';
 
-import { GetArray } from 'code/tools/GetArray';
-import { GetColor } from 'code/tools/GetColor';
-import { GetElement } from 'code/tools/GetElement';
-import { GetEvent } from 'code/tools/GetEvent';
-import { GetPath } from 'code/tools/GetPath';
+import { GetArray } from 'code/utilities/GetArray';
+import { GetColor } from 'code/utilities/GetColor';
+import { GetElement } from 'code/utilities/GetElement';
+import { GetEvent } from 'code/utilities/GetEvent';
+import { GetPath } from 'code/utilities/GetPath';
 
 //--|►| Default Data |◄|--//
 export namespace DefaultData {

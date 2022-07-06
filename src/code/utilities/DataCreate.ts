@@ -1,13 +1,13 @@
 //--|▼| Tools (Import) |▼|--//
-import { GetArray } from 'code/tools/GetArray';
-import { GetColor } from 'code/tools/GetColor';
-import { GetElement } from 'code/tools/GetElement';
-import { GetEvent } from 'code/tools/GetEvent';
-import { GetPath } from 'code/tools/GetPath';
+import { GetArray } from 'code/utilities/GetArray';
+import { GetColor } from 'code/utilities/GetColor';
+import { GetElement } from 'code/utilities/GetElement';
+import { GetEvent } from 'code/utilities/GetEvent';
+import { GetPath } from 'code/utilities/GetPath';
 
-import { UseCapify } from 'code/tools/UseCapify';
-import { UseDatefy } from 'code/tools/UseDatefy';
-import { UseValufy } from 'code/tools/UseValufy';
+import { UseCapify } from 'code/utilities/UseCapify';
+import { UseDatefy } from 'code/utilities/UseDatefy';
+import { UseValufy } from 'code/utilities/UseValufy';
 
 //--|►| DataCreate (Tool) |◄|--//
 export namespace DataCreate {
